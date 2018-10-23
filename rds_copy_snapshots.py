@@ -23,6 +23,7 @@ def lambda_handler(event, context):
               SourceRegion='us-west-2'
               )
 
+          
   for i in snapshots['DBSnapshots']:
       if 'SnapshotCreateTime' in i:
           if i['SnapshotCreateTime'] >= delete_time:
