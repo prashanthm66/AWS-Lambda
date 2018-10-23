@@ -64,7 +64,7 @@ def lambda_handler(event, context):
                 "Destination": {
                 "Bucket": "arn:aws:s3:::dest-buck-replica-us-west-2",
                 "StorageClass": "STANDARD"
-            }
+           }
         }
      ]
     }
