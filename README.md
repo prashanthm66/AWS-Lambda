@@ -1,5 +1,5 @@
 # AWS-Lambda
-Repository contains 3 lambda function 
+lambda function to replicate buckets and copying rds snapshots from one region to another
   a.bucketrplication.py
     Creates bucket replication from one region to another
   b.cloudtrail_logparsing.py
