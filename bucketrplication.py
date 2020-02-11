@@ -55,14 +55,14 @@ def lambda_handler(event, context):
     respon = s3.put_bucket_replication(
     Bucket='src-bucket-replica-6258',
     ReplicationConfiguration={
-        "Role": "arn:aws:iam::505728423372:role/lambda-s3full66",
+        "Role": "arn:aws:iam::role",
         "Rules": [
             {
                 'ID': 'ObjReplication',
                 "Prefix": "",
                 "Status": "Enabled",
                 "Destination": {
-                "Bucket": "arn:aws:s3:::dest-buck-replica-us-west-2",
+                "Bucket": "arn:aws:s3:::dest-bucket",
                 "StorageClass": "STANDARD"
            }
         }
